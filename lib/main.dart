@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projet/categories_screen.dart';
+import 'package:projet/category_screen.dart';
 import 'package:projet/home_page.dart';
 
 void main() {
@@ -17,6 +19,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomePage(),
+      routes: {
+        '/home': (context) => const HomePage(),
+        '/categories': (context) => const CategoriesScreen(),
+        '/category': (context) => const CategoryScreen(),
+      }
     );
   }
 }
